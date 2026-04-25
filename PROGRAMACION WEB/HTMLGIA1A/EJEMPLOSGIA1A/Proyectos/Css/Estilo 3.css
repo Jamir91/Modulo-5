@@ -1,0 +1,183 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* FONDO MARFIL */
+body {
+    font-family: "Segoe UI", sans-serif;
+    background-color: #fdf6e3; /* marfil */
+    color: #2c3e50;
+}
+
+/* HEADER */
+.top-header {
+    text-align: center;
+    padding: 30px;
+    background: #ffffff;
+    border-bottom: 1px solid #ddd;
+}
+
+.top-header h1 {
+    font-size: 32px;
+}
+
+/* NAV */
+nav {
+    position: sticky;
+    top: 0;
+    background: #ffffff;
+    border-bottom: 1px solid #ccc;
+    z-index: 1000;
+}
+
+/* MENÚ */
+.menu {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #2c3e50;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    background: #f1f1f1;
+}
+
+/* SUBMENÚ */
+.submenu {
+    display: none;
+    position: absolute;
+    background: white;
+    list-style: none;
+    border: 1px solid #ccc;
+}
+
+.dropdown:hover .submenu {
+    display: block;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #ffe0b2, #fff3e0);
+}
+
+.hero h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+/* CONTENEDOR */
+.contenedor {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
+    padding: 30px;
+}
+
+/* TARJETAS */
+.card {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* SIDEBAR */
+.sidebar {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #ffffff;
+    border-top: 1px solid #ddd;
+}
+
+/* RESPONSIVE */
+@media (max-width: 800px) {
+    .contenedor {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* SIDEBAR */
+.sidebar {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+/* TITULO */
+.sidebar h3 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #2c3e50;
+    border-bottom: 2px solid #f1f1f1;
+    padding-bottom: 5px;
+}
+
+/* LISTA */
+.lista-paises {
+    list-style: none;
+}
+
+/* ITEMS */
+.lista-paises li {
+    margin-bottom: 10px;
+}
+
+/* LINKS */
+.lista-paises a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: #2c3e50;
+    padding: 10px;
+    border-radius: 8px;
+    transition: 0.3s;
+    background: #fafafa;
+}
+
+/* TEXTO */
+.lista-paises span {
+    flex: 1;
+}
+
+/* HOVER */
+.lista-paises a:hover {
+    background: #ffe0b2;
+    color: #d35400;
+    transform: translateX(5px);
+}
+
+/* EFECTO ACTIVO (opcional) */
+.lista-paises a:active {
+    background: #ffd699;
+}

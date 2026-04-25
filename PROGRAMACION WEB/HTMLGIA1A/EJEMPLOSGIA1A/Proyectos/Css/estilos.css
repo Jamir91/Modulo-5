@@ -1,0 +1,129 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fondo */
+body {
+    font-family: "Segoe UI", sans-serif;
+    background: linear-gradient(135deg, #eef2f7, #d6eaf8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Contenedor */
+.container {
+    width: 100%;
+    max-width: 500px;
+}
+
+/* Tarjeta */
+.card {
+    background: #ffffff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* Header */
+.card-header {
+    background: linear-gradient(to right, #2e86c1, #5dade2);
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+.card-header h1 {
+    font-size: 22px;
+}
+
+.card-header p {
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+/* Body */
+.card-body {
+    padding: 20px;
+}
+
+/* Perfil */
+.perfil {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.perfil img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 3px solid #d6eaf8;
+}
+
+.info p {
+    margin-bottom: 6px;
+    font-size: 14px;
+}
+
+/* Títulos */
+h2 {
+    margin-bottom: 10px;
+    color: #2e86c1;
+    font-size: 18px;
+}
+
+/* Lista */
+ul {
+    padding-left: 18px;
+}
+
+li {
+    margin-bottom: 6px;
+    font-size: 14px;
+}
+
+/* Enlace */
+a {
+    color: #1f618d;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Separador */
+hr {
+    margin: 15px 0;
+    border: none;
+    height: 1px;
+    background: #e5e7e9;
+}
+
+/* Footer */
+.card-footer {
+    background: #f4f6f9;
+    text-align: center;
+    padding: 10px;
+    font-size: 12px;
+    color: #555;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+    .perfil {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    body {
+        height: auto;
+        padding: 20px;
+    }
+}
